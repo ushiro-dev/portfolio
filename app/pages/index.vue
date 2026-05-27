@@ -3,5 +3,6 @@
     <HomeIntroSection />
     <HomeStrengthSection />
     <HomeTechStackSection />
+    <HomeFeaturedProjectsSection />
   </main>
 </template>
