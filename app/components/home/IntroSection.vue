@@ -8,10 +8,9 @@
       Kumiko Ushiro
     </h1>
 
-    <p class="max-w-2xl text-lg leading-relaxed text-gray-600">
-      運用・改善を意識したWeb開発を得意とするエンジニア。
-      Laravel / Nuxt / WordPress / AWS を中心に、
-      管理画面開発や性能改善を含む実務経験があります。
+    <p class="text-lg leading-relaxed text-gray-600">
+      運用・改善を意識したWeb開発を得意とするエンジニア。<br>
+      Laravel / Nuxt / WordPress / AWS を中心に、管理画面開発や既存システムの改善対応に携わってきました。
     </p>
   </section>
 </template>
