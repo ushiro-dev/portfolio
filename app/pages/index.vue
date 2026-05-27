@@ -5,5 +5,6 @@
     <HomeTechStackSection />
     <HomeFeaturedProjectsSection />
     <HomeAboutLinkSection />
+    <HomeContactSection />
   </main>
 </template>
