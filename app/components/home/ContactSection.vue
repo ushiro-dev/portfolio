@@ -1,18 +1,19 @@
 <template>
   <section class="bg-gray-900 py-20 text-white">
     <div class="mx-auto max-w-5xl px-6">
+
       <div class="max-w-3xl">
         <p class="mb-3 text-sm font-medium text-blue-300">
-          Contact
+          GitHub
         </p>
 
         <h2 class="text-3xl font-bold tracking-tight">
-          GitHub・お問い合わせ
+          ソースコード・開発過程を公開しています
         </h2>
 
         <p class="mt-5 leading-relaxed text-gray-300">
-          ポートフォリオのソースコードや開発過程について GitHub に公開しています。<br>
-          ご連絡についても、お気軽にお問い合わせください。
+          このポートフォリオのソースコードや、開発過程について GitHub に公開しています。<br>
+          ご興味ありましたらぜひご覧ください。
         </p>
       </div>
 
@@ -26,13 +27,14 @@
           GitHubを見る
         </a>
 
-        <NuxtLink
-          to="/contact"
+        <a
+          href="mailto:k.ushiro.dev@gmail.com"
           class="inline-flex rounded-full border border-gray-600 px-5 py-3 text-sm font-semibold text-white transition hover:border-gray-400 hover:bg-gray-800"
         >
-          Contact
-        </NuxtLink>
+          お問い合わせ
+        </a>
       </div>
+
     </div>
   </section>
 </template>

@@ -17,7 +17,7 @@ const scrollTop = () => {
         <NuxtLink to="/" class="hover:text-gray-900" @click="scrollTop">Home</NuxtLink>
         <NuxtLink to="/about" class="hover:text-gray-900">About</NuxtLink>
         <NuxtLink to="/projects" class="hover:text-gray-900">Projects</NuxtLink>
-        <NuxtLink to="/contact" class="hover:text-gray-900">Contact</NuxtLink>
+        <NuxtLink to="https://github.com/ushiro-dev/portfolio" class="hover:text-gray-900">GitHub</NuxtLink>
       </nav>
     </div>
   </header>
