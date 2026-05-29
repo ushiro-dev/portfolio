@@ -1,18 +1,41 @@
 <script setup lang="ts">
+import { projects } from '~/data/projects'
 
 const route = useRoute()
 
-import { projects } from '~/data/projects'
-
-const project =
-  projects.find((project) => project.slug === route.params.slug)
+const project = projects.find(
+  (project) => project.slug === route.params.slug
+)
 
 if (!project) {
-  throw showError({
+  throw createError({
     statusCode: 404,
-    statusMessage: 'Project Not Found',
+    message: 'Project Not Found',
   })
 }
+
+const sections = [
+  {
+    label: 'Responsibilities',
+    title: '担当内容',
+    items: project.responsibilities,
+  },
+  {
+    label: 'Efforts',
+    title: '工夫した点',
+    items: project.efforts,
+  },
+  {
+    label: 'Difficulties',
+    title: '苦労した点',
+    items: project.difficulties,
+  },
+  {
+    label: 'Learnings',
+    title: '学んだこと',
+    items: project.learnings,
+  },
+]
 </script>
 <template>
   <main class="bg-gray-50">
@@ -65,21 +88,30 @@ if (!project) {
       </div>
     </section>
 
-    <section class="bg-gray-50 py-20">
+    <section
+      v-for="section in sections"
+      :key="section.title"
+      class="bg-gray-50 py-20"
+    >
       <div class="mx-auto grid max-w-5xl gap-10 px-6 md:grid-cols-[1fr_2fr]">
-
         <div>
-          <h2 class="text-2xl font-bold">
-            担当・工夫したこと
+          <p class="mb-3 text-sm font-medium text-blue-700">
+            {{ section.label }}
+          </p>
+          <h2 class="text-2xl font-bold text-gray-900">
+            {{ section.title }}
           </h2>
         </div>
 
-        <div>
-          <p class="leading-relaxed text-gray-600">
-            {{ project.detail }}
-          </p>
-        </div>
-
+        <ul class="space-y-3 text-gray-600">
+          <li
+            v-for="item in section.items"
+            :key="item"
+            class="rounded-xl border border-gray-200 bg-white p-4"
+          >
+            {{ item }}
+          </li>
+        </ul>
       </div>
     </section>
 
