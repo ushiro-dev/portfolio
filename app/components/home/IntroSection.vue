@@ -9,8 +9,7 @@
     </h1>
 
     <p class="text-lg leading-relaxed text-gray-600">
-      運用・改善を意識したWeb開発を得意とするエンジニア。<br>
-      Laravel / Nuxt / WordPress / AWS を中心に、管理画面開発や既存システムの改善対応に携わってきました。
+      既存システムの改善と、運用しやすいWeb開発に取り組んでいます。
     </p>
   </section>
 </template>
