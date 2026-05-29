@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const featuredProjects = [
   {
+    slug: 'quiz-service',
     category: 'Web Service',
     title: 'クイズ投稿・管理Webサービス',
     description:
@@ -9,6 +10,7 @@ const featuredProjects = [
     point: '管理画面・権限管理・API実装・共通化',
   },
   {
+    slug: 'wordpress-performance',
     category: 'Performance Improvement',
     title: 'WordPressポータルサイト改善',
     description:
@@ -17,6 +19,7 @@ const featuredProjects = [
     point: 'フィード統合・障害調査・パフォーマンス改善',
   },
   {
+    slug: 'recruit-site',
     category: 'Corporate Website',
     title: 'リクルートサイト改修',
     description:
@@ -69,10 +72,26 @@ const featuredProjects = [
             </span>
           </div>
 
-          <p class="mt-auto border-t border-gray-200 pt-4 text-sm font-medium text-gray-700">
+          <p class="mb-6 border-t border-gray-200 pt-4 text-sm font-medium text-gray-700">
             {{ project.point }}
           </p>
+          
+          <NuxtLink
+            :to="`/projects/${project.slug}`"
+            class="mt-auto inline-flex text-sm font-semibold text-blue-700 transition hover:text-blue-900"
+          >
+            詳細を見る
+          </NuxtLink>
         </article>
+      </div>
+
+      <div class="mt-10 text-center">
+        <NuxtLink
+          to="/projects"
+          class="inline-flex rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition hover:border-gray-400 hover:bg-gray-50"
+        >
+          実績一覧を見る
+        </NuxtLink>
       </div>
     </div>
   </section>
