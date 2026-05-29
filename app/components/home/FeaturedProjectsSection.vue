@@ -1,33 +1,7 @@
 <script setup lang="ts">
-const featuredProjects = [
-  {
-    slug: 'quiz-service',
-    category: 'Web Service',
-    title: 'クイズ投稿・管理Webサービス',
-    description:
-      'Nuxt / AWS / DynamoDB を用いたクイズ投稿・閲覧・管理サービスにおいて、管理画面やユーザー情報取得機能を担当しました。',
-    tags: ['Nuxt', 'TypeScript', 'AWS', 'DynamoDB', 'Cognito'],
-    point: '管理画面・権限管理・API実装・共通化',
-  },
-  {
-    slug: 'wordpress-performance',
-    category: 'Performance Improvement',
-    title: 'WordPressポータルサイト改善',
-    description:
-      'ポータルサイトTOPへの最新情報表示機能の実装と、WordPressサイトの負荷調査・キャッシュ導入による安定化対応を行いました。',
-    tags: ['WordPress', 'PHP', 'Apache', 'Cloudflare', 'MySQL'],
-    point: 'フィード統合・障害調査・パフォーマンス改善',
-  },
-  {
-    slug: 'recruit-site',
-    category: 'Corporate Website',
-    title: 'リクルートサイト改修',
-    description:
-      'Laravelで構築された採用サイトにおいて、CMS化、管理画面追加、リニューアル対応、他開発者のフォロー・レビューを担当しました。',
-    tags: ['Laravel', 'PHP', 'MySQL', 'Docker', 'AWS'],
-    point: 'CMS化・継続改修・チーム開発',
-  },
-]
+import { projects } from '~/data/projects'
+
+const featuredProjects = projects.filter((project) => project.featured)
 </script>
 <template>
   <section class="bg-white py-20">
