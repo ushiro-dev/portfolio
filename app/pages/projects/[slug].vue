@@ -26,14 +26,9 @@ const sections = [
     items: project.efforts,
   },
   {
-    label: 'Difficulties',
-    title: '苦労した点',
-    items: project.difficulties,
-  },
-  {
-    label: 'Learnings',
-    title: '学んだこと',
-    items: project.learnings,
+    label: 'Results',
+    title: '成果',
+    items: project.results,
   },
 ]
 </script>
@@ -55,7 +50,7 @@ const sections = [
         {{ project.title }}
       </h1>
 
-      <p class="mt-6 max-w-3xl leading-relaxed text-gray-600">
+      <p class="mt-6 leading-relaxed text-gray-600">
         {{ project.description }}
       </p>
 
