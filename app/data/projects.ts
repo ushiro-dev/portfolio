@@ -4,10 +4,10 @@ export const projects = [
     featured: true,
     category: 'Web Service',
     title: 'クイズ投稿・管理Webサービス',
+    point: '管理画面開発・権限管理・API実装',
+    tags: ['Nuxt.js', 'TypeScript', 'AWS', 'DynamoDB', 'Cognito'],
     description:
       'Nuxt / AWS / DynamoDB を用いたクイズ投稿・閲覧・管理サービスにおいて、管理画面やユーザー情報取得機能を担当しました。',
-    tags: ['Nuxt', 'TypeScript', 'AWS', 'DynamoDB', 'Cognito'],
-    point: '管理画面・権限管理・API実装・共通化',
     background:
       "管理画面やユーザー管理機能の開発を担当。権限管理やAPI実装を行いました。",
     responsibilities: [
@@ -33,47 +33,14 @@ export const projects = [
     ],
   },
   {
-    slug: 'wordpress-performance',
-    featured: true,
-    category: 'Performance Improvement',
-    title: 'WordPressポータルサイト改善',
-    description:
-      'ポータルサイトTOPへの最新情報表示機能の実装と、WordPressサイトの負荷調査・キャッシュ導入による安定化対応を行いました。',
-    tags: ['WordPress', 'PHP', 'Apache', 'Cloudflare', 'MySQL'],
-    point: 'フィード統合・障害調査・パフォーマンス改善',
-    background:
-      "コンテンツごとに取得方法が異なる中で、TOPページに最新情報を統合表示する必要がありました。また、アクセス時にサイトが不安定になる問題も発生していました。",
-    responsibilities: [
-      'WordPressポータルサイトTOPページへの最新情報表示機能を実装',
-      'RSS・スクレイピングを利用した情報取得処理の実装・改修',
-      'WordPress独自プラグイン改修およびモーダル連携対応',
-      'サイトパフォーマンス調査およびサーバ負荷改善を担当',
-    ],
-    efforts: [
-      '取得方法が異なる複数コンテンツを整理し、共通化を意識した実装を行った',
-      'モーダル内に存在する情報へ直接遷移できる仕組みを実装し、UX向上を図った',
-      'アプリケーションだけでなく、サーバ構成も含めた改善を意識して対応した',
-    ],
-    difficulties: [
-      'RSS、スクレイピング、モーダル表示など異なる取得方式を統一的に扱う実装に苦労した',
-      '高メモリ使用率・swap逼迫による不安定化の原因調査と改善対応を段階的に実施した',
-      '限られたサーバリソースの中で、スペック増強ではなく改善による解決を求められた',
-    ],
-    learnings: [
-      'WordPress改善では、実装だけでなく運用やサーバ負荷を考慮する重要性を学んだ',
-      'ボトルネック調査では、アプリケーション・ミドルウェア・インフラを横断して考える必要があると学んだ',
-      '段階的に改善を積み重ねることで、大きな構成変更をせずに安定化できることを学んだ',
-    ],
-  },
-  {
     slug: 'recruit-site',
     featured: true,
     category: 'Corporate Website',
     title: 'リクルートサイト改修',
+    point: 'CMS開発・既存改修・運用改善',
+    tags: ['Laravel', 'PHP', 'MySQL', 'Docker', 'AWS'],
     description:
       'Laravelで構築された採用サイトにおいて、CMS化、管理画面追加、リニューアル対応、他開発者のフォロー・レビューを担当しました。',
-    tags: ['Laravel', 'PHP', 'MySQL', 'Docker', 'AWS'],
-    point: 'CMS化・継続改修・チーム開発',
     background:
       "採用サイトの継続的な改修案件として、CMS化、管理画面機能追加、リニューアル対応などを担当しました。",
     responsibilities: [
@@ -96,6 +63,39 @@ export const projects = [
       'CMS開発では、実装だけでなく運用しやすさを考慮する重要性を学んだ',
       'リニューアルでは、機能追加だけでなく保守性を意識した設計が重要だと学んだ',
       'チーム開発では、周囲の状況を把握しながら動くことの重要性を学んだ',
+    ],
+  },
+  {
+    slug: 'wordpress-performance',
+    featured: true,
+    category: 'Performance Improvement',
+    title: 'WordPressポータルサイト改善',
+    point: '機能開発・負荷調査・性能改善',
+    tags: ['WordPress', 'PHP', 'MySQL'],
+    description:
+      'ポータルサイトTOPへの最新情報表示機能の実装と、WordPressサイトの負荷調査・キャッシュ導入による安定化対応を行いました。',
+    background:
+      "コンテンツごとに取得方法が異なる中で、TOPページに最新情報を統合表示する必要がありました。また、アクセス時にサイトが不安定になる問題も発生していました。",
+    responsibilities: [
+      'WordPressポータルサイトTOPページへの最新情報表示機能を実装',
+      'RSS・スクレイピングを利用した情報取得処理の実装・改修',
+      'WordPress独自プラグイン改修およびモーダル連携対応',
+      'サイトパフォーマンス調査およびサーバ負荷改善を担当',
+    ],
+    efforts: [
+      '取得方法が異なる複数コンテンツを整理し、共通化を意識した実装を行った',
+      'モーダル内に存在する情報へ直接遷移できる仕組みを実装し、UX向上を図った',
+      'アプリケーションだけでなく、サーバ構成も含めた改善を意識して対応した',
+    ],
+    difficulties: [
+      'RSS、スクレイピング、モーダル表示など異なる取得方式を統一的に扱う実装に苦労した',
+      '高メモリ使用率・swap逼迫による不安定化の原因調査と改善対応を段階的に実施した',
+      '限られたサーバリソースの中で、スペック増強ではなく改善による解決を求められた',
+    ],
+    learnings: [
+      'WordPress改善では、実装だけでなく運用やサーバ負荷を考慮する重要性を学んだ',
+      'ボトルネック調査では、アプリケーション・ミドルウェア・インフラを横断して考える必要があると学んだ',
+      '段階的に改善を積み重ねることで、大きな構成変更をせずに安定化できることを学んだ',
     ],
   },
 ]

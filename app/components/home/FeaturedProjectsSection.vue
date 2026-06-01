@@ -14,7 +14,7 @@ const featuredProjects = projects.filter((project) => project.featured)
           主な実績
         </h2>
         <p class="mt-4 leading-relaxed text-gray-600">
-          実務で担当した開発・改善経験の中から、特に強みが伝わりやすいものを抜粋しています。
+          実務経験の中から、強みが伝わりやすい開発・改善経験を掲載しています。
         </p>
       </div>
 
@@ -33,7 +33,7 @@ const featuredProjects = projects.filter((project) => project.featured)
           </h3>
 
           <p class="mb-5 text-sm leading-relaxed text-gray-600">
-            {{ project.description }}
+            {{ project.point }}
           </p>
 
           <div class="mb-5 flex flex-wrap gap-2">
@@ -46,10 +46,6 @@ const featuredProjects = projects.filter((project) => project.featured)
             </span>
           </div>
 
-          <p class="mb-6 border-t border-gray-200 pt-4 text-sm font-medium text-gray-700">
-            {{ project.point }}
-          </p>
-          
           <NuxtLink
             :to="`/projects/${project.slug}`"
             class="mt-auto inline-flex text-sm font-semibold text-blue-700 transition hover:text-blue-900"
