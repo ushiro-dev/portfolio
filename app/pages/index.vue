@@ -2,7 +2,7 @@
   <main class="min-h-screen bg-gray-50">
     <HomeIntroSection />
     <HomeStrengthSection />
-    <HomeTechStackSection />
+    <HomeSkillSection />
     <HomeFeaturedProjectsSection />
     <HomeAboutLinkSection />
     <HomeContactSection />
