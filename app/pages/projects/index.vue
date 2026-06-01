@@ -13,8 +13,7 @@ import { projects } from '~/data/projects'
       </h1>
 
       <p class="mt-6 max-w-3xl leading-relaxed text-gray-600">
-        実務で担当した開発・改修・改善経験の中から、特に強みが伝わりやすいものを整理しています。
-        管理画面開発、CMS化、Webサイト改善、パフォーマンス改善など、運用を意識した取り組みを中心に掲載しています。
+        実務で担当した開発・改修経験を、プロジェクトごとに整理して掲載しています。
       </p>
     </section>
 
@@ -30,8 +29,8 @@ import { projects } from '~/data/projects'
               {{ project.category }}
             </p>
 
-            <h2 class="mb-3 text-xl font-bold leading-snug text-gray-900">
-              {{ project.title }}
+            <h2 class="mb-3 text-lg font-bold leading-snug text-gray-900">
+              {{ project.listTitle ?? project.title }}
             </h2>
 
             <p class="mb-5 text-sm leading-relaxed text-gray-600">

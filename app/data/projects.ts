@@ -7,7 +7,7 @@ export const projects = [
     point: '管理画面開発・権限管理・API実装',
     tags: ['Nuxt.js', 'TypeScript', 'AWS', 'DynamoDB', 'Cognito'],
     description:
-      'Nuxt / AWS / DynamoDB を用いたクイズ投稿・閲覧・管理サービスにおいて、管理画面やユーザー情報取得機能を担当しました。',
+      'Nuxt.js / TypeScript / AWS / DynamoDB を用いたクイズ投稿・閲覧・管理サービスにおいて、管理画面やユーザー情報取得機能を担当しました。',
     background:
       "管理画面やユーザー管理機能の開発を担当。権限管理やAPI実装を行いました。",
     responsibilities: [
@@ -40,7 +40,7 @@ export const projects = [
     point: 'CMS開発・既存改修・運用改善',
     tags: ['Laravel', 'PHP', 'MySQL', 'Docker', 'AWS'],
     description:
-      'Laravelで構築された採用サイトにおいて、CMS化、管理画面追加、リニューアル対応、他開発者のフォロー・レビューを担当しました。',
+      'Laravelで構築された採用サイトにおいて、CMS化、管理画面追加、リニューアル対応、不具合調査・修正を担当しました。',
     background:
       "採用サイトの継続的な改修案件として、CMS化、管理画面機能追加、リニューアル対応などを担当しました。",
     responsibilities: [
@@ -70,10 +70,11 @@ export const projects = [
     featured: true,
     category: 'Performance Improvement',
     title: 'WordPressポータルサイト改善',
+    listTitle: 'ポータルサイト改善',
     point: '機能開発・負荷調査・性能改善',
     tags: ['WordPress', 'PHP', 'MySQL'],
     description:
-      'ポータルサイトTOPへの最新情報表示機能の実装と、WordPressサイトの負荷調査・キャッシュ導入による安定化対応を行いました。',
+      'ポータルサイトへの最新情報表示機能の実装、情報取得処理の改修、負荷調査・キャッシュ導入による安定化対応を担当しました。',
     background:
       "コンテンツごとに取得方法が異なる中で、TOPページに最新情報を統合表示する必要がありました。また、アクセス時にサイトが不安定になる問題も発生していました。",
     responsibilities: [
@@ -98,4 +99,34 @@ export const projects = [
       '段階的に改善を積み重ねることで、大きな構成変更をせずに安定化できることを学んだ',
     ],
   },
+  {
+    slug: 'wordpress-site-update',
+    featured: false,
+    category: 'Website Maintenance',
+    title: 'WordPressサイト改修',
+    listTitle: '企業サイト改修',
+    point: '既存改修・運用改善・調査対応',
+    tags: ['WordPress', 'PHP', 'CSS', 'JavaScript'],
+    description:
+      '企業サイトの運用・改修案件において、コンテンツ更新、表示調整、軽微な機能修正、既存コード調査を担当しました。',  
+    background:
+      '企業サイト運用の中で、数値更新や軽微な改修、表示調整などの対応が継続的に発生していました。',
+    responsibilities: [
+      'コンテンツ更新',
+      '表示調整',
+      '軽微改修',
+      '既存コード調査'
+    ],
+    efforts: [
+      '既存構成を確認しながら、影響範囲を考慮して改修',
+      '改善できそうな箇所については可能な範囲で提案・対応'
+    ],
+    difficulties: [
+      '既存実装の調査や影響範囲確認を行いながら改修を進行'
+    ],
+    learnings: [
+      '運用中サイト改修時の影響調査',
+      '小規模改善を積み重ねる重要性'
+    ],
+  }
 ]
