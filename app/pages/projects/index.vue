@@ -34,7 +34,7 @@ import { projects } from '~/data/projects'
             </h2>
 
             <p class="mb-5 text-sm leading-relaxed text-gray-600">
-              {{ project.description }}
+              {{ project.listDescription }}
             </p>
 
             <div class="mb-5 flex flex-wrap gap-2">
