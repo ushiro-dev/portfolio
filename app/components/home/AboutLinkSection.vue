@@ -8,12 +8,12 @@
 
         <h2 class="text-3xl font-bold tracking-tight text-gray-900">
           実務経験をもとに、<br>
-          改善・保守を意識した開発に取り組んでいます。
+          改善・保守を意識したWeb開発に取り組んでいます。
         </h2>
 
         <p class="mt-5 leading-relaxed text-gray-600">
-          Laravel / Nuxt / WordPress / AWS を中心に、管理画面開発、CMS化、Webサイト改善などに携わってきました。<br>
-          既存コードの調査や未経験技術のキャッチアップを行いながら、運用しやすいシステムづくりを意識しています。
+          Laravel / Nuxt / WordPress / AWS を中心に、管理画面開発、CMS開発、既存システム改善に携わってきました。<br>
+          既存コードの調査やキャッチアップを行いながら、運用しやすいシステムづくりを意識しています。
         </p>
 
         <div class="mt-8">
