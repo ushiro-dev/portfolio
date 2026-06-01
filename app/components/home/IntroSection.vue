@@ -9,7 +9,7 @@
     </h1>
 
     <p class="text-lg leading-relaxed text-gray-600">
-      既存システムの改善と、運用しやすいWeb開発に取り組んでいます。
+      既存システム改善を中心に、保守性や運用を意識したWeb開発に取り組んできました。
     </p>
   </section>
 </template>
