@@ -4,7 +4,6 @@
     <HomeStrengthSection />
     <HomeSkillSection />
     <HomeFeaturedProjectsSection />
-    <HomeAboutLinkSection />
     <HomeContactSection />
   </main>
 </template>

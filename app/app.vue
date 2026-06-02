@@ -1,7 +1,12 @@
 <template>
   <div>
     <LayoutAppHeader />
-      <NuxtPage />
+    <NuxtPage />
     <LayoutAppFooter />
   </div>
 </template>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
