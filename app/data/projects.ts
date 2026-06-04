@@ -10,6 +10,20 @@ export const projects = [
       '管理画面開発、権限制御、API実装を中心に、クイズサービスの管理機能整備を担当しました。',
     description:
       'Nuxt.js / TypeScript / AWS / DynamoDB を用いたクイズ投稿・閲覧・管理サービスにおいて、管理画面開発および各種管理機能の実装を担当しました。',
+    screenshots: [
+      {
+        src: '/images/projects/quiz-user-detail.png',
+        alt: 'ユーザー管理画面',
+        title: 'ユーザー管理画面',
+        description: 'Cognito・DynamoDBと連携したユーザー詳細管理画面',
+      },
+      {
+        src: '/images/projects/quiz-create.png',
+        alt: 'クイズ作成画面',
+        title: 'クイズ作成画面',
+        description: 'JSONインポート、動的フォーム',
+      },
+    ],
     background:
       "管理画面やユーザー管理機能の開発を担当し、権限制御やAPI実装を含めた管理機能の整備を行いました。",
     responsibilities: [
@@ -40,6 +54,20 @@ export const projects = [
       '採用サイトのCMS開発、管理画面追加、既存改修、リニューアル対応を担当しました。',
     description:
       'Laravelで構築された採用サイトにおいて、CMS開発、管理画面追加、継続改修、リニューアル対応を担当しました。',
+    screenshots: [
+      {
+        src: '/images/projects/recruit-news-list.png',
+        alt: 'ニュース一覧画面',
+        title: 'ニュース管理画面',
+        description: '一覧管理、ソート、公開設定、CMS運用機能',
+      },
+      {
+        src: '/images/projects/recruit-seminar-create.png',
+        alt: '勉強会作成画面',
+        title: '勉強会新規作成',
+        description: '入力フォーム、画像アップロード、コンテンツ管理',
+      },
+    ],    
     background:
       "採用サイトの継続改修案件として、CMS化や管理画面追加、リニューアル対応など、運用を考慮した機能追加・改善対応を行いました。",
     responsibilities: [
@@ -101,6 +129,20 @@ export const projects = [
       '企業サイトの継続改修として、表示調整、既存機能改修、コード調査、運用対応を担当しました。',
     description:
       '企業サイトの運用・改修案件において、既存機能改修、表示調整、コンテンツ更新、既存コード調査を担当しました。',  
+    screenshots: [
+      {
+        src: '/images/projects/wordpress-site-admin.png',
+        alt: '職種比率管理画面',
+        title: '職種比率管理画面',
+        description: 'データの更新対応および運用改善を目的とした更新フロー整備',
+      },
+      {
+        src: '/images/projects/wordpress-site-chart.png',
+        alt: '職種比率・スキル分布表示',
+        title: '職種比率・スキル分布表示',
+        description: '表示改修および更新対応',
+      },
+    ],
     background:
       '運用中の企業サイトにおいて、コンテンツ更新や既存機能改修など、継続的な改善対応を行いました。',
     responsibilities: [

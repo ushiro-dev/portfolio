@@ -63,6 +63,32 @@ const sections = [
           {{ tag }}
         </span>
       </div>
+
+      <div
+        v-if="project.screenshots?.length"
+        class="mt-16 mx-auto max-w-4xl space-y-10"
+      >
+        <figure
+          v-for="screenshot in project.screenshots"
+          :key="screenshot.src"
+          class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm"
+        >
+          <img
+            :src="screenshot.src"
+            :alt="screenshot.alt"
+            class="w-full"
+          >
+
+          <figcaption class="border-t border-gray-200 p-5">
+            <p class="font-bold text-gray-900">
+              {{ screenshot.title }}
+            </p>
+            <p class="mt-2 text-sm leading-relaxed text-gray-600">
+              {{ screenshot.description }}
+            </p>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
     <section class="bg-white py-20">
